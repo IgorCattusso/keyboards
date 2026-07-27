@@ -32,4 +32,5 @@ Each project includes its own documentation, CAD files, firmware, wiring informa
 
 ## License
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 The work under this repository is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
