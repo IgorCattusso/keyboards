@@ -1,0 +1,11 @@
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+### CircuitPython ###
+.Trashes
+.metadata_never_index
+.fseventsd/
+boot_out.txt
