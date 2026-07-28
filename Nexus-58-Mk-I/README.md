@@ -6,6 +6,17 @@ Connection type inspired by the [ScottoSplit](https://scottokeebs.com/blogs/keyb
 Nexus-58 Mk.I is the first iteration of my Nexus series. My goal with this project was to create a practical, repairable, and completely custom split keyboard using readily available components and a fully 3D-printed case.
 
 
+## Repository Contents
+
+```text
+Nexus-58-Mk-I/
+├── photos/         # 3D printable models
+├── software/       # Firmware source
+├── stls/           # Photos and renders
+└── README.md
+```
+
+
 ## Features
 
 - 58-key split layout
@@ -26,15 +37,10 @@ The circular interconnect cable provides a direct connection between both halves
 A GX20 Aviation connector with 12 Pins was used on this project, but any type of connector can be used, as long as it has 12 pins to carry the signal from all 7 columns and 5 rows from the right side to the left side that has the MCU. A second MCU can be used on the right side with a P2 or USB cabe interconnecting both sides, but that would elevate the cost significantly (in my country, at least).
 
 
-## Repository Contents
+## Firmware and software
+This project uses [KMK Firmware](https://github.com/KMKfw/kmk_firmware), and requires [CircuitPython](https://circuitpython.org/) installed on the MCU.
 
-```text
-Nexus-58-Mk-I/
-├── photos/         # 3D printable models
-├── software/       # Firmware source
-├── stls/           # Photos and renders
-└── README.md
-```
+After installing the firmware, simply drop the `Nexus-58-Mk-I/software/code.py` file on the root directory of the MCU.
 
 
 ## Components
@@ -42,7 +48,7 @@ Nexus-58-Mk-I/
 Most of the components were bought in Brazil, where I live:
 - Raspberry Pi Pico (RP2040): [RoboCore](https://www.robocore.net/placa-raspberry-pi/raspberry-pi-pico/)
 - Pins for the Pi Pico: [RoboCore](https://www.robocore.net/conector/barra-de-40-pinos-macho-90-5-unidades/)
-- Diodes: [Mercado Livre](https://www.mercadolivre.com.br/diodo-de-sinal-1n4148-kit-200-pecas/p/MLB2072206267)
+- Diodes 1n4148: [Mercado Livre](https://www.mercadolivre.com.br/diodo-de-sinal-1n4148-kit-200-pecas/p/MLB2072206267)
 - Brass screw inserts: [Mercado Livre](https://www.mercadolivre.com.br/kit-50-inserto-metalico-de-rosca-m3-impressoes-3d/up/MLBU605703878)
 - Black M3 screws: [Parafuso Fácil](https://www.parafusofacil.com.br/parafuso-allen/parafuso-allen-chato/din-7991-parafuso-allen-chato-ma-3-x-6-aco-liga-classe-10-9-enegrecido-de-tempera-1/)
 - GX20 Aviation connector with 12 Pins: [Elecbee](https://www.elecbee.com/en/product-detail/10sets-gx20-aviation-connector-male-and-female-one-pair-12pin-straightpanel-mount-solder-type-connector_5743)
